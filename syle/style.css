@@ -1,6 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Euclid Circular A";
     src: url("../assest/fonts/EuclidCircularA-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
+}
+
+body {
+    font-family: "Euclid Circular A";
+    max-width: 1920px;
+    width: 100%;
+}
+
+.header-logo,
+.header-contacts {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    max-height: 101px;
+    height: 100%;
+}
+
+.header-logo__menu-burger {
+    position: relative;
+    margin-top: 32px;
+    width: 32px;
+    height: 36px;
+    display: block;
+    margin-right: 77px;
+}
+
+.header-logo__menu-burger span,
+.header-logo__menu-burger:after,
+.header-logo__menu-burger:before {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #2b2e34;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.header-logo__menu-burger span {
+    top: 18px;
+}
+
+.header-logo__menu-burger:after,
+.header-logo__menu-burger:before {
+    content: "";
+}
+
+.header-logo__menu-burger:after {
+    bottom: 9px;
+}
+
+.header-logo__menu-burger:before {
+    top: 9px;
+}
+
+.header-logo__title-logo {
+    display: flex;
+}
+
+.header-logo__title-logo p {
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.header-logo__title-logo .logotip {
+    margin-top: 17px;
+}
+
+.header-logo__text img {
+    padding-top: 12px;
+    padding-left: 20px;
+    margin-bottom: 9px;
+}
+
+.header-logo__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 74px;
+}
+
+.header-logo_search {
+    margin-top: 23px;
+    max-width: 851px;
+    width: 100%;
+    height: 54px;
+    background-color: #f6f6f6;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 65px;
+}
+
+.header-logo_search input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    margin-left: 18px;
+    height: 19px;
+}
+
+.header-logo_search input::placeholder {
+    font-family: "Euclid Circular A";
+    font-size: 15px;
+}
+
+.header-logo__icons {
+    display: flex;
+}
+
+.header-logo__car {
+    margin-top: 40.06px;
+    margin-right: 33px;
+}
+
+.header-logo__user {
+    margin-top: 40px;
+    margin-right: 25.8px;
+}
+
+.header-logo__basket-basket {
+    margin-top: 39.33px;
+    position: relative;
+}
+
+.header-logo__basket-basket p {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    width: 16px;
+    padding-top: 2px;
+    height: 16px;
+    color: white;
+    background-color: #1dbcd2;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.header-contacts {
+    justify-content: space-between;
+    padding-left: 1.5px;
+    padding-top: 47px;
+    max-width: 1520px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-contacts__geo-position,
+.header-contacts__phone-company,
+.header-contacts__mail-company,
+.header-contacts__application,
+.header-contacts__contact {
+    display: flex;
+}
+
+.header-contacts div:last-child {
+    margin-right: 0px;
+}
+
+.header-contacts img {
+    margin-right: 16px;
+}
+
+.header-contacts p {
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.header-poster {
+    height: 294px;
+    background: linear-gradient( 90deg, rgba(45, 174, 194, 1), rgb(111, 212, 228) 100%);
+}
+
+.heder-poster__container {
+    position: relative;
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-poster__title p:first-child {
+    font-size: 42px;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 82px;
+    font-weight: 600;
+    line-height: 53px;
+    margin-bottom: 24px;
+}
+
+.header-poster__title p:last-child {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header-poster__banner img {
+    position: absolute;
+    right: 276px;
+}
+
+.header-poster__btn {
+    width: 282px;
+    height: 78px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 111px;
+}
+
+.main-container {
+    max-width: 1520px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-breadcrumbs {
+    margin-top: 46px;
+    color: #858a93;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.main-breadcrumbs span {
+    color: black;
+    font-weight: 500;
+    margin-left: 7px;
 }
